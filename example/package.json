@@ -1,0 +1,21 @@
+{
+	"name": "mv3-content-bridge-example",
+	"version": "0.0.0",
+	"private": true,
+	"description": "Demo Chrome extension showing mv3-content-bridge in action — content script reads page-side globals via window.postMessage",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"typecheck": "tsc --noEmit"
+	},
+	"dependencies": {
+		"mv3-content-bridge": "workspace:*"
+	},
+	"devDependencies": {
+		"@crxjs/vite-plugin": "^2.0.0-beta.28",
+		"@types/chrome": "^0.0.280",
+		"typescript": "^5.6.0",
+		"vite": "^5.4.10"
+	}
+}

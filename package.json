@@ -1,0 +1,64 @@
+{
+	"name": "mv3-content-bridge",
+	"version": "0.0.0",
+	"description": "Chrome extension content-script ↔ page-context bridge for Manifest V3 (MV3) — type-safe wrapper over window.postMessage with request/response semantics. Zero dependencies, fully typed.",
+	"keywords": [
+		"chrome-extension",
+		"browser-extension",
+		"content-script",
+		"page-context",
+		"main-world",
+		"isolated-world",
+		"postmessage",
+		"window-postmessage",
+		"content-bridge",
+		"mv3",
+		"manifest-v3",
+		"web-extension",
+		"webextension",
+		"firefox-extension",
+		"edge-extension",
+		"typescript"
+	],
+	"author": "graybear",
+	"license": "MIT",
+	"homepage": "https://github.com/graybearo/mv3-content-bridge#readme",
+	"bugs": "https://github.com/graybearo/mv3-content-bridge/issues",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/graybearo/mv3-content-bridge.git"
+	},
+	"main": "./dist/index.cjs",
+	"module": "./dist/index.mjs",
+	"types": "./dist/index.d.ts",
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/index.mjs",
+			"require": "./dist/index.cjs"
+		}
+	},
+	"files": ["dist", "README.md", "LICENSE"],
+	"publishConfig": {
+		"access": "public"
+	},
+	"scripts": {
+		"build": "tsup",
+		"typecheck": "tsc --noEmit",
+		"test": "vitest run",
+		"release": "semantic-release"
+	},
+	"devDependencies": {
+		"@semantic-release/commit-analyzer": "^13.0.0",
+		"@semantic-release/github": "^11.0.0",
+		"@semantic-release/npm": "^12.0.1",
+		"@semantic-release/release-notes-generator": "^14.0.0",
+		"@types/node": "^22.9.0",
+		"conventional-changelog-conventionalcommits": "^8.0.0",
+		"happy-dom": "^15.11.0",
+		"semantic-release": "^24.2.0",
+		"tsup": "^8.3.0",
+		"typescript": "^5.6.0",
+		"vitest": "^2.1.0"
+	}
+}

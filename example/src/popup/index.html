@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>mv3-content-bridge demo</title>
+		<style>
+			body {
+				margin: 0;
+				width: 280px;
+				padding: 14px 16px;
+				font: 12px/1.45 system-ui, sans-serif;
+				color-scheme: light dark;
+			}
+			h1 { margin: 0 0 6px; font-size: 14px; }
+			code { font: 11px ui-monospace, SF Mono, Menlo, monospace; }
+		</style>
+	</head>
+	<body>
+		<h1>mv3-content-bridge</h1>
+		<p>Visit any <code>https://</code> page and look for the floating box in the bottom-right corner.</p>
+		<p>The first line shows that the <strong>ISOLATED</strong> content script can't see <code>window.__demoState</code>. The second line shows the same data fetched <strong>via the bridge</strong>.</p>
+	</body>
+</html>
